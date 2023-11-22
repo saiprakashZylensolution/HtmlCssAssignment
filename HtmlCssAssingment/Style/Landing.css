@@ -1,0 +1,212 @@
+.bg-image {
+    position: relative;
+    width: 100%;
+    padding: 0.1px;
+    height: 100vh;
+}
+
+.bg-image::before {
+    content: "";
+    background-image: url('../backgroundImage.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+.bg-color {
+    background: var(--background-dark, #2F1893);
+    padding: 1px;
+}
+
+header {
+    max-width: 971px;
+    margin: 50px auto;
+}
+
+.listOne p {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.listOne li {
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.listTwo li {
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.listTwo li button,.listTwo button {
+    border-radius: 100px;
+    border: 2px solid var(--colors-white, #6C7A96);
+    width: 94px;
+    height: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    background: none;
+}
+.res-btn{
+    display: none;
+}
+.heading h1{
+font-size: 58px;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 120.69% */
+letter-spacing: -1px;
+color: #fff;
+text-align: center;
+padding-top: 50px;
+}
+.heading p{
+    color: var(--colors-white, #FFF);
+text-align: center;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+text-align: center;
+width: 46%;
+margin-top: 20px;
+}
+.inputbox input{
+    width: 370px;
+height: 60px;
+border-radius: 100px;
+border: 2px solid var(--colors-white, #6C7A96);
+background: none;
+box-sizing: border-box;
+padding: 16px 24px;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+}
+.inputbox{
+    max-width: 971px;
+    margin: 70px auto;
+}
+.inputbox button{
+    width: 170px;
+height: 60px;
+border-radius: 100px;
+background: var(--action-third, #E93A7D);
+color: var(--colors-white, #FFF);
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+}
+.signup p{
+    color: var(--colors-white, #FFF);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: center;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #6C7A96;
+background-color: transparent;
+border-radius: 50%;
+margin-right: 20px;
+margin-top: 25px;
+margin-bottom: 10px;
+}
+.fa{
+    font-size: 18px;
+    color:#fff;
+}
+.fa.fa-bars{
+    display: none;
+}
+@media screen and (max-width:1030px) {
+    .bg-image{
+        height: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    
+    .heading p{
+        width: 70%;
+    }
+    .inputbox{
+        flex-wrap: wrap;
+        max-width: 75%;
+        margin:50px auto;
+        justify-content: center;
+        align-items: center;
+    }
+     .inputbox input{
+        width: 250px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+    }
+    
+}
+@media screen and (max-width:610px) {
+    .listTwo ul{
+        display: none;
+    }
+    .listTwo button{
+        display: block;
+    }
+   .bg-color .inputbox{
+        max-width: 60%;
+    }
+    .bg-color .inputbox input{
+        width: 340px;
+        margin-bottom: 30px;
+    }
+    .bg-color .inputbox input{
+        margin-right: 0px;
+    }
+    
+}
+
+@media screen and (max-width:426px) {
+    .bg-color .bg-image header .listTwo button{
+display: none;
+    }
+    .heading p{
+        width: 90%;
+    }
+    
+    
+}
+@media screen and (max-width:377px) {
+    .listOne ul{
+        display: none;
+    }
+    .listOne{
+        justify-content: space-between;
+        width: 100%
+    }
+    header .fa.fa-bars{
+        display: block;
+        font-size: 22px;
+    }
+    header{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 40px;
+    }
+}

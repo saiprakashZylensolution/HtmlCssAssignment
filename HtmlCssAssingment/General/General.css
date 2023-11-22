@@ -1,0 +1,55 @@
+body{
+    margin: 0;padding: 0;
+    font-family: 'Dm-sans';
+}
+h1,h2,h3,h4,h5,h6,p,li,ul{
+    margin: 0;padding: 0;
+}
+button{
+    border: none;
+}
+.d-flex{
+    display: flex;
+}
+.d-js{
+    justify-content: space-between;
+}
+.d-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-ae{
+    align-items: end;
+}
+.d-je{
+    justify-content: end;
+}
+.d-fc{
+    flex-direction: column;
+}
+.d-fw{
+    flex-wrap: wrap;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+ul,li{
+    list-style-type: none;
+}
+.pos-rel{
+    position: relative;
+}
+.d-jc{
+    justify-content: center;
+}
+.d-ac{
+    align-items: center;
+}
+@font-face {
+    font-family: 'Dm-sans';
+    src: url(./DMSans_24pt-Regular.ttf);
+}
